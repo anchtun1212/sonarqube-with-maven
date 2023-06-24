@@ -16,5 +16,5 @@ open: http://localhost:8080/
 
 - Run: `sudo docker ps`
 - Run: `sudo docker exec -it jenkins_container_id bash`
-- Run: `echo `find . -name initialAdminPassword` `
+- Run: `echo ``find . -name initialAdminPassword`` `
 - Run: `cat ./var/jenkins_home/secrets/initialAdminPassword`
