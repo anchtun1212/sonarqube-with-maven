@@ -1,6 +1,9 @@
 # sonarqube-with-maven
 How to integrate SonarQube with your Maven projects
 
+# Check .md file
+open: https://commonmark.org/help/
+
 # Run docker-compose file
 `sudo docker compose up`
 
