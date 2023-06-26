@@ -21,3 +21,20 @@ open: http://localhost:8080/
 - Run: `sudo docker exec -it jenkins_container_id bash`
 - Run: echo \`find . -name initialAdminPassword\`
 - Run: `cat ./var/jenkins_home/secrets/initialAdminPassword`
+
+# JaCoCo
+open: https://www.jacoco.org/jacoco/trunk/doc/maven.html
+
+To receive a full list of goals and available parameters you can use maven-help-plugin (go inside pom.xml folder):
+
+`mvn help:describe -Dplugin=org.jacoco:jacoco-maven-plugin -Ddetail`
+
+Run this: `mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify org.jacoco:jacoco-maven-plugin:report`
+
+Then go inside: /target/site/jacoco/index.html (open with browser)
+
+
+
+
+
+
