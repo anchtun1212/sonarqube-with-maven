@@ -33,6 +33,10 @@ Run this: `mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify org.jacoco:ja
 
 Then go inside: /target/site/jacoco/index.html (open with browser)
 
+#Java test coverage reports
+Java test coverage reports are generated with: `mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify org.jacoco:jacoco-maven-plugin:report sonar:sonar -Dsonar.jdbc.username=sonar -Dsonar.jdbc.password=password -Dsonar.host.url=http://<sonarqube-address>:9000 -Dsonar.jdbc.url=jdbc:postgresql://<postgre-address>/sonarqube`
+
+
 
 
 
